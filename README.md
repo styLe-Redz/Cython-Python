@@ -13,3 +13,10 @@ Cython ha sido durante mucho tiempo una de las grandes armas secretas del rendim
 - Velocidad de paso de tiempo, según fuerza y masa
 
 Con estas pruebas se puede estimar el tiempo de ejecucion y la diferencia del mismo cuando se usa Python y Cython.
+
+# Compilar definiciones de tiempo para NumPy
+
+Para crear un código C más eficiente para matrices NumPy, se necesitan declaraciones adicionales. Para empezar, se usa la instrucción cimport de Cython para obtener acceso a los tipos NumPy:
+
+´´´cimport numpy as cnp´´´
+
